@@ -1,0 +1,1124 @@
+fileFormatVersion: 2
+guid: 47e4fbedbd41bab498453a2ebec29b66
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1553210516226208304
+    second: cucumberdeath_0
+  - first:
+      213: -2474854665926500457
+    second: cucumberdeath_1
+  - first:
+      213: -5691481167868060710
+    second: cucumberdeath_2
+  - first:
+      213: 7517249820356743834
+    second: cucumberdeath_3
+  - first:
+      213: 597115728586596517
+    second: cucumberdeath_4
+  - first:
+      213: 358343260118160949
+    second: cucumberdeath_5
+  - first:
+      213: 6277929461905785439
+    second: cucumberdeath_6
+  - first:
+      213: 8577051091234907983
+    second: cucumberdeath_7
+  - first:
+      213: -3499906398343930186
+    second: cucumberdeath_8
+  - first:
+      213: -6675488294122815528
+    second: cucumberdeath_9
+  - first:
+      213: 6543204632621001256
+    second: cucumberdeath_10
+  - first:
+      213: 3211541704978146189
+    second: cucumberdeath_11
+  - first:
+      213: -5271511209518247985
+    second: cucumberdeath_12
+  - first:
+      213: -6034745983093166057
+    second: cucumberdeath_13
+  - first:
+      213: 8658970777936560794
+    second: cucumberdeath_14
+  - first:
+      213: -7557303211198676904
+    second: cucumberdeath_15
+  - first:
+      213: -4385132383964592521
+    second: cucumberdeath_16
+  - first:
+      213: -8263639872290040573
+    second: cucumberdeath_17
+  - first:
+      213: -6546239821857444789
+    second: cucumberdeath_18
+  - first:
+      213: 5621850882602566358
+    second: cucumberdeath_19
+  - first:
+      213: 8504081430613019165
+    second: cucumberdeath_20
+  - first:
+      213: 6070014936194555162
+    second: cucumberdeath_21
+  - first:
+      213: 3358925253914583669
+    second: cucumberdeath_22
+  - first:
+      213: 5666445465657588952
+    second: cucumberdeath_23
+  - first:
+      213: 2265175868834636047
+    second: cucumberdeath_24
+  - first:
+      213: 354591966474542873
+    second: cucumberdeath_25
+  - first:
+      213: -6329751698057551397
+    second: cucumberdeath_26
+  - first:
+      213: 1496152102384413363
+    second: cucumberdeath_27
+  - first:
+      213: 1458315855363551534
+    second: cucumberdeath_28
+  - first:
+      213: -5589168913806284583
+    second: cucumberdeath_29
+  - first:
+      213: 6740394119759753224
+    second: cucumberdeath_30
+  - first:
+      213: 591221874636672243
+    second: cucumberdeath_31
+  - first:
+      213: -5799296418252512450
+    second: cucumberdeath_32
+  - first:
+      213: -1960988529027001452
+    second: cucumberdeath_33
+  - first:
+      213: -3155258850833487623
+    second: cucumberdeath_34
+  - first:
+      213: 4331419179462082244
+    second: cucumberdeath_35
+  - first:
+      213: 5049668328753989638
+    second: cucumberdeath_36
+  - first:
+      213: 5908106626873435563
+    second: cucumberdeath_37
+  - first:
+      213: -4648236358922332277
+    second: cucumberdeath_38
+  - first:
+      213: 3034069754885627675
+    second: cucumberdeath_39
+  - first:
+      213: 913672906785225459
+    second: cucumberdeath_40
+  - first:
+      213: 6503781384731654792
+    second: cucumberdeath_41
+  - first:
+      213: -2039020407318648390
+    second: cucumberdeath_42
+  - first:
+      213: 3505390583334801865
+    second: cucumberdeath_43
+  - first:
+      213: -8950882785182700689
+    second: cucumberdeath_0
+  - first:
+      213: -4670093327704633133
+    second: cucumberdeath_1
+  - first:
+      213: 1863247266953525836
+    second: cucumberdeath_2
+  - first:
+      213: 1759530661206720490
+    second: cucumberdeath_3
+  - first:
+      213: -4798439793507646352
+    second: cucumberdeath_5
+  - first:
+      213: -6242942049546506724
+    second: cucumberdeath_6
+  - first:
+      213: 2263633147672964214
+    second: cucumberdeath_7
+  - first:
+      213: -5150254191970677349
+    second: cucumberdeath_8
+  - first:
+      213: 5873713516218030269
+    second: cucumberdeath_10
+  - first:
+      213: 3668800675021450983
+    second: cucumberdeath_11
+  - first:
+      213: 8287104058990135297
+    second: cucumberdeath_12
+  - first:
+      213: -6508738163195269140
+    second: cucumberdeath_13
+  - first:
+      213: 3173645494994042008
+    second: cucumberdeath_15
+  - first:
+      213: 8166584869591679769
+    second: cucumberdeath_16
+  - first:
+      213: -5801017904875907847
+    second: cucumberdeath_17
+  - first:
+      213: -5169552106706821017
+    second: cucumberdeath_18
+  - first:
+      213: 963156668450618815
+    second: cucumberdeath_20
+  - first:
+      213: 2040628698520430529
+    second: cucumberdeath_21
+  - first:
+      213: -3139453000531969437
+    second: cucumberdeath_22
+  - first:
+      213: 3961163494983147306
+    second: cucumberdeath_23
+  - first:
+      213: -7129093172120261008
+    second: cucumberdeath_25
+  - first:
+      213: 6262406278117150318
+    second: cucumberdeath_26
+  - first:
+      213: -8045129624451967245
+    second: cucumberdeath_27
+  - first:
+      213: -535900139678178235
+    second: cucumberdeath_28
+  - first:
+      213: -4533965004731456430
+    second: cucumberdeath_30
+  - first:
+      213: -4426442972187966093
+    second: cucumberdeath_31
+  - first:
+      213: -7482853747173769235
+    second: cucumberdeath_32
+  - first:
+      213: -6597933372494189606
+    second: cucumberdeath_33
+  - first:
+      213: 8704635425909510655
+    second: cucumberdeath_35
+  - first:
+      213: 6349032427640332240
+    second: cucumberdeath_36
+  - first:
+      213: 4970627045337123966
+    second: cucumberdeath_37
+  - first:
+      213: -4280307379850563039
+    second: cucumberdeath_38
+  - first:
+      213: -1086832310709020488
+    second: cucumberdeath_40
+  - first:
+      213: -623411457567902395
+    second: cucumberdeath_41
+  - first:
+      213: -8435439025477051930
+    second: cucumberdeath_42
+  - first:
+      213: -5142583057849451938
+    second: cucumberdeath_43
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cucumberdeath_0
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 783
+        width: 137
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6ba60bd78318c380800000000000000
+      internalID: -8950882785182700689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_1
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 783
+        width: 138
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d05e369cde703fb0800000000000000
+      internalID: -4670093327704633133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_2
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 783
+        width: 138
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a7b7374859bd910800000000000000
+      internalID: 1863247266953525836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_3
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 783
+        width: 137
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aef72a060db1b6810800000000000000
+      internalID: 1759530661206720490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_5
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 783
+        width: 137
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 074c0e75e64886db0800000000000000
+      internalID: -4798439793507646352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_6
+      rect:
+        serializedVersion: 2
+        x: 2008
+        y: 783
+        width: 137
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e6e6f484d9c59a0800000000000000
+      internalID: -6242942049546506724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_7
+      rect:
+        serializedVersion: 2
+        x: 2327
+        y: 783
+        width: 138
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ca8d4ca5a0a6f10800000000000000
+      internalID: 2263633147672964214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_8
+      rect:
+        serializedVersion: 2
+        x: 2647
+        y: 783
+        width: 139
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9d0f90891f9688b0800000000000000
+      internalID: -5150254191970677349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_10
+      rect:
+        serializedVersion: 2
+        x: 3286
+        y: 783
+        width: 139
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db8169e925f938150800000000000000
+      internalID: 5873713516218030269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_11
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 527
+        width: 137
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eeed5a96c23ae230800000000000000
+      internalID: 3668800675021450983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_12
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 527
+        width: 146
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1080ec41c35b10370800000000000000
+      internalID: 8287104058990135297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_13
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 527
+        width: 146
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cefa7b610215ca5a0800000000000000
+      internalID: -6508738163195269140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_15
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 527
+        width: 140
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c732453cd0b0c20800000000000000
+      internalID: 3173645494994042008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_16
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 527
+        width: 137
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9138714aba9855170800000000000000
+      internalID: 8166584869591679769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_17
+      rect:
+        serializedVersion: 2
+        x: 2008
+        y: 527
+        width: 137
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f4d03c53f4ae7fa0800000000000000
+      internalID: -5801017904875907847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_18
+      rect:
+        serializedVersion: 2
+        x: 2327
+        y: 527
+        width: 138
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7602ed79fbf0248b0800000000000000
+      internalID: -5169552106706821017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_20
+      rect:
+        serializedVersion: 2
+        x: 2967
+        y: 527
+        width: 146
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbd3c0e03e1dd5d00800000000000000
+      internalID: 963156668450618815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_21
+      rect:
+        serializedVersion: 2
+        x: 3286
+        y: 527
+        width: 146
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c727c55df4c15c10800000000000000
+      internalID: 2040628698520430529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_22
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 271
+        width: 137
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36af14a212c6e64d0800000000000000
+      internalID: -3139453000531969437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_23
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 271
+        width: 138
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2f17b72631e8f630800000000000000
+      internalID: 3961163494983147306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_25
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 271
+        width: 178
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07eeb11188f501d90800000000000000
+      internalID: -7129093172120261008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_26
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 271
+        width: 179
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6e495e845988e650800000000000000
+      internalID: 6262406278117150318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_27
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 271
+        width: 179
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f691924b35f95090800000000000000
+      internalID: -8045129624451967245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_28
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 271
+        width: 177
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544666b89a91098f0800000000000000
+      internalID: -535900139678178235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_30
+      rect:
+        serializedVersion: 2
+        x: 2614
+        y: 271
+        width: 188
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 254ede4a9de1411c0800000000000000
+      internalID: -4533965004731456430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_31
+      rect:
+        serializedVersion: 2
+        x: 2934
+        y: 271
+        width: 187
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3754630b19d1292c0800000000000000
+      internalID: -4426442972187966093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_32
+      rect:
+        serializedVersion: 2
+        x: 3255
+        y: 271
+        width: 186
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: defb18da920972890800000000000000
+      internalID: -7482853747173769235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_33
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 15
+        width: 186
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adbe9c81e8e6f64a0800000000000000
+      internalID: -6597933372494189606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_35
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 15
+        width: 267
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff11e9cfcc31dc870800000000000000
+      internalID: 8704635425909510655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_36
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 15
+        width: 264
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df10f4ba5b4c1850800000000000000
+      internalID: 6349032427640332240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_37
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 15
+        width: 267
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7cc44456f63bf440800000000000000
+      internalID: 4970627045337123966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_38
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 15
+        width: 267
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1223686bd1b4994c0800000000000000
+      internalID: -4280307379850563039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_40
+      rect:
+        serializedVersion: 2
+        x: 2270
+        y: 15
+        width: 267
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b895cd85cbcae0f0800000000000000
+      internalID: -1086832310709020488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_41
+      rect:
+        serializedVersion: 2
+        x: 2590
+        y: 15
+        width: 267
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 545b1c215923957f0800000000000000
+      internalID: -623411457567902395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_42
+      rect:
+        serializedVersion: 2
+        x: 2912
+        y: 15
+        width: 266
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e919f136ec4fea80800000000000000
+      internalID: -8435439025477051930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumberdeath_43
+      rect:
+        serializedVersion: 2
+        x: 3231
+        y: 15
+        width: 267
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5af0f894ffd1a8b0800000000000000
+      internalID: -5142583057849451938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
