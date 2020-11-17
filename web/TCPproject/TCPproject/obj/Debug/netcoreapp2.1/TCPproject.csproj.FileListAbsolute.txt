@@ -30,3 +30,10 @@ E:\TCP\web\TCPproject\TCPproject\obj\Debug\netcoreapp2.1\TCPproject.Views.pdb
 E:\TCP\web\TCPproject\TCPproject\obj\Debug\netcoreapp2.1\TCPproject.dll
 E:\TCP\web\TCPproject\TCPproject\obj\Debug\netcoreapp2.1\TCPproject.pdb
 E:\TCP\web\TCPproject\TCPproject\obj\Debug\netcoreapp2.1\TCPproject.csproj.CopyComplete
+E:\TCP\web\TCPproject\TCPproject\obj\Debug\netcoreapp2.1\Razor\Views\Base\Index.g.cshtml.cs
+E:\TCP\web\TCPproject\TCPproject\obj\Debug\netcoreapp2.1\Razor\Views\Base\Welcome.g.cshtml.cs
+E:\TCP\web\TCPproject\TCPproject\obj\Debug\netcoreapp2.1\Razor\Views\Users\Create.g.cshtml.cs
+E:\TCP\web\TCPproject\TCPproject\obj\Debug\netcoreapp2.1\Razor\Views\Users\Delete.g.cshtml.cs
+E:\TCP\web\TCPproject\TCPproject\obj\Debug\netcoreapp2.1\Razor\Views\Users\Details.g.cshtml.cs
+E:\TCP\web\TCPproject\TCPproject\obj\Debug\netcoreapp2.1\Razor\Views\Users\Edit.g.cshtml.cs
+E:\TCP\web\TCPproject\TCPproject\obj\Debug\netcoreapp2.1\Razor\Views\Users\Index.g.cshtml.cs

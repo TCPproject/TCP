@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using TCPproject.Models;
 
 namespace TCPproject
 {
@@ -20,6 +22,8 @@ namespace TCPproject
         }
 
         public IConfiguration Configuration { get; }
+
+       
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -33,6 +37,11 @@ namespace TCPproject
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddDbContext<TCPprojectContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("TCPprojectContext")));
+
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
