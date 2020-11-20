@@ -3,17 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-
 namespace TCPproject.Models
 {
-    public class TCPprojectContext : DbContext
+    public class UserContext : DbContext
     {
-        public TCPprojectContext(DbContextOptions<TCPprojectContext> options)
+        public DbSet<User> Users { get; set; }
+        public UserContext(DbContextOptions<UserContext> options)
             : base(options)
         {
-
+            Database.EnsureCreated();
         }
-
-
     }
 }
