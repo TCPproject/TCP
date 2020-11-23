@@ -53,7 +53,7 @@ namespace TCPproject.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nickname,Highscore")] User user)
+        public async Task<IActionResult> Create([Bind("Id,Nickname,Highscore,Email,Password")] User user)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +85,7 @@ namespace TCPproject.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nickname,Highscore")] User user)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nickname,Highscore,Email,Password")] User user)
         {
             if (id != user.Id)
             {

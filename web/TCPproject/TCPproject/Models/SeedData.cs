@@ -13,30 +13,6 @@ namespace TCPproject.Models
         {
             using (var context = new TCPprojectContext(serviceProvider.GetRequiredService<DbContextOptions<TCPprojectContext>>()))
             {
-                if (context.User.Any())
-                {
-                    return;
-                }
-
-                context.User.AddRange(
-                    new User
-                    {
-                        Nickname = "Debchik228",
-                        Highscore = 9999
-                    },
-
-                    new User
-                    {
-                        Nickname = "Dodik", 
-                        Highscore = 228
-                    },
-
-                    new User
-                    {
-                        Nickname = "Debick",
-                        Highscore = 1488
-                    }
-                );
                 context.SaveChanges();
             }
         }

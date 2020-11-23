@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\TCP\\web\\TCPproject\\TCPproject\\TCPproject.csproj": {}
+    "E:\\TCP\\web\\TCPproject\\TCPproject\\TCPproject.csproj": {}
   },
   "projects": {
-    "D:\\TCP\\web\\TCPproject\\TCPproject\\TCPproject.csproj": {
+    "E:\\TCP\\web\\TCPproject\\TCPproject\\TCPproject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TCP\\web\\TCPproject\\TCPproject\\TCPproject.csproj",
+        "projectUniqueName": "E:\\TCP\\web\\TCPproject\\TCPproject\\TCPproject.csproj",
         "projectName": "TCPproject",
-        "projectPath": "D:\\TCP\\web\\TCPproject\\TCPproject\\TCPproject.csproj",
-        "packagesPath": "C:\\Users\\neret\\.nuget\\packages\\",
-        "outputPath": "D:\\TCP\\web\\TCPproject\\TCPproject\\obj\\",
+        "projectPath": "E:\\TCP\\web\\TCPproject\\TCPproject\\TCPproject.csproj",
+        "packagesPath": "C:\\Users\\misha\\.nuget\\packages\\",
+        "outputPath": "E:\\TCP\\web\\TCPproject\\TCPproject\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\neret\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\misha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,7 +43,27 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
             "Microsoft.AspNetCore.Authentication.Google": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.AspNetCore.Cryptography.Internal": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.AspNetCore.Cryptography.KeyDerivation": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.AspNetCore.Razor.Language": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.CodeAnalysis.Razor": {
               "target": "Package",
               "version": "[5.0.0, )"
             },
@@ -48,7 +71,23 @@
               "target": "Package",
               "version": "[5.0.0, )"
             },
+            "Microsoft.EntityFrameworkCore.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[5.0.0, )"
             },
