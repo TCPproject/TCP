@@ -26,7 +26,7 @@ namespace TCPproject
 
                 try
                 {
-                    var context = services.GetRequiredService<TCPprojectContext>();
+                    var context = services.GetRequiredService<UserContext>();
                     context.Database.Migrate();
                     SeedData.Initialize(services);
                 }

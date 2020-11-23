@@ -11,7 +11,7 @@ namespace TCPproject.Models
     {
         public static void Initialize(IServiceProvider serviceProvider)
         {
-            using (var context = new TCPprojectContext(serviceProvider.GetRequiredService<DbContextOptions<TCPprojectContext>>()))
+            using (var context = new UserContext(serviceProvider.GetRequiredService<DbContextOptions<UserContext>>()))
             {
                 context.SaveChanges();
             }

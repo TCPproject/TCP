@@ -26,9 +26,9 @@ namespace TCPproject
 
         public void ConfigureServices(IServiceCollection services)
         {
-
             string connection = Configuration.GetConnectionString("DefaultConnection");
-            services.AddDbContext<TCPprojectContext>(options => options.UseSqlServer(Configuration.GetConnectionString("TCPprojectContext")));
+            services.AddDbContext<UserContext>(options => 
+                options.UseSqlServer(Configuration.GetConnectionString("UserContext")));
 
             // установка конфигурации подключения
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)

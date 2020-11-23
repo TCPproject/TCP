@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using TCPproject.ViewModels; // пространство имен моделей RegisterModel и LoginModel
 using TCPproject.Models; // пространство имен UserContext и класса User
+
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 
@@ -54,7 +55,7 @@ namespace TCPproject.Controllers
                 if (user == null)
                 {
                     // добавляем пользователя в бд
-                    db.Users.Add(new User { Email = model.Email, Password = model.Password });
+                    db.Users.Add(new User { Email = model.Email, Nickname = model.Nickname, Password = model.Password });
                     await db.SaveChangesAsync();
 
                     await Authenticate(model.Email); // аутентификация

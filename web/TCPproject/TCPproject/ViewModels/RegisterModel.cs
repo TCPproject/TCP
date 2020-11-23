@@ -4,6 +4,9 @@ namespace TCPproject.ViewModels
 {
     public class RegisterModel
     {
+        [Required(ErrorMessage = "Не указан NickName")]
+        public string Nickname { get; set; }
+
         [Required(ErrorMessage = "Не указан Email")]
         public string Email { get; set; }
 
