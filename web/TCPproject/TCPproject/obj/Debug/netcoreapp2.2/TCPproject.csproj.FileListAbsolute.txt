@@ -1,0 +1,7 @@
+D:\TCP\web\TCPproject\TCPproject\obj\Debug\netcoreapp2.2\TCPproject.csprojAssemblyReference.cache
+D:\TCP\web\TCPproject\TCPproject\obj\Debug\netcoreapp2.2\TCPproject.AssemblyInfoInputs.cache
+D:\TCP\web\TCPproject\TCPproject\obj\Debug\netcoreapp2.2\TCPproject.AssemblyInfo.cs
+D:\TCP\web\TCPproject\TCPproject\obj\Debug\netcoreapp2.2\TCPproject.csproj.CoreCompileInputs.cache
+D:\TCP\web\TCPproject\TCPproject\obj\Debug\netcoreapp2.2\TCPproject.RazorAssemblyInfo.cache
+D:\TCP\web\TCPproject\TCPproject\obj\Debug\netcoreapp2.2\TCPproject.RazorAssemblyInfo.cs
+D:\TCP\web\TCPproject\TCPproject\obj\Debug\netcoreapp2.2\TCPproject.TagHelpers.input.cache

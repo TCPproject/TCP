@@ -32,10 +32,12 @@ namespace TCPproject
 
             // установка конфигурации подключения
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-                .AddCookie(options => //CookieAuthenticationOptions
-                {
-                    options.LoginPath = new Microsoft.AspNetCore.Http.PathString("/Account/Login");
-                });
+            .AddCookie(options => //CookieAuthenticationOptions
+{
+                options.LoginPath = new Microsoft.AspNetCore.Http.PathString("/Account/Login");
+            });
+
+            services.AddControllersWithViews();
         }
 
         public void Configure(IApplicationBuilder app)
