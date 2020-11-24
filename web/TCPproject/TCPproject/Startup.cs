@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 
 namespace TCPproject
 {
@@ -36,7 +37,13 @@ namespace TCPproject
 {
                 options.LoginPath = new Microsoft.AspNetCore.Http.PathString("/Account/Login");
             });
-
+            services.AddAuthentication()
+        .AddGoogle(opts =>
+        {
+            opts.ClientId = "484152469879-arn97i6il7agt0cg8hl36ogn01iestqu.apps.googleusercontent.com";
+            opts.ClientSecret = "czbp7FWXp6fuov3Ef1n8sodJ";
+            opts.SignInScheme = IdentityConstants.ExternalScheme;
+        });
             services.AddControllersWithViews();
         }
 
@@ -55,7 +62,7 @@ namespace TCPproject
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Users}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }
