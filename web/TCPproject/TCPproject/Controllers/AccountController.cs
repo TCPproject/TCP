@@ -13,7 +13,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace TCPproject.Controllers
 {
     [Authorize]
-    public class AccountController : Controller
+    public class AccountController  : Controller 
     {
         private UserContext db;
         private UserManager<User> userManager;

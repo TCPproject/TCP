@@ -13,6 +13,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authentication.Google;
 
 namespace TCPproject
 {
@@ -30,16 +31,25 @@ namespace TCPproject
             string connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<UserContext>(options => 
                 options.UseSqlServer(Configuration.GetConnectionString("UserContext")));
-
+            
             // установка конфигурации подключения
-            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-            .AddCookie(options => //CookieAuthenticationOptions
-{
-                options.LoginPath = new Microsoft.AspNetCore.Http.PathString("/Account/Login");
-            });
-            services.AddAuthentication()
+             
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = IdentityConstants.ApplicationScheme;
+                options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = IdentityConstants.ApplicationScheme;
+                options.DefaultChallengeScheme = GoogleDefaults.AuthenticationScheme;
+            })
+                .AddCookie(options => //CookieAuthenticationOptions
+                {
+                    options.LoginPath = new Microsoft.AspNetCore.Http.PathString("/Account/Login");
+                })
+
         .AddGoogle(opts =>
         {
+            IConfigurationSection googleAuthNSection =
+                Configuration.GetSection("Authentication:Google");
             opts.ClientId = "484152469879-arn97i6il7agt0cg8hl36ogn01iestqu.apps.googleusercontent.com";
             opts.ClientSecret = "czbp7FWXp6fuov3Ef1n8sodJ";
             opts.SignInScheme = IdentityConstants.ExternalScheme;
@@ -54,7 +64,6 @@ namespace TCPproject
             app.UseStaticFiles();
 
             app.UseRouting();
-
             app.UseAuthentication();    // аутентификация
             app.UseAuthorization();     // авторизация
 

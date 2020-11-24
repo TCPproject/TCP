@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace TCPproject.Controllers
 {
+    
     public class HomeController : Controller
     {
         [Authorize]
