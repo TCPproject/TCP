@@ -33,26 +33,27 @@ namespace TCPproject
                 options.UseSqlServer(Configuration.GetConnectionString("UserContext")));
             
             // установка конфигурации подключения
+            
              
             services.AddAuthentication(options =>
             {
-                options.DefaultAuthenticateScheme = IdentityConstants.ApplicationScheme;
-                options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-                options.DefaultChallengeScheme = IdentityConstants.ApplicationScheme;
-                options.DefaultChallengeScheme = GoogleDefaults.AuthenticationScheme;
+                //options.DefaultAuthenticateScheme = IdentityConstants.ApplicationScheme;
+                options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                //options.DefaultChallengeScheme = IdentityConstants.ApplicationScheme;
+                //options.DefaultChallengeScheme = GoogleDefaults.AuthenticationScheme;
             })
                 .AddCookie(options => //CookieAuthenticationOptions
                 {
-                    options.LoginPath = new Microsoft.AspNetCore.Http.PathString("/Account/Login");
+                    options.LoginPath = "/account/google-login";
                 })
 
         .AddGoogle(opts =>
         {
-            IConfigurationSection googleAuthNSection =
-                Configuration.GetSection("Authentication:Google");
+            //IConfigurationSection googleAuthNSection =
+              //  Configuration.GetSection("Authentication:Google");
             opts.ClientId = "484152469879-arn97i6il7agt0cg8hl36ogn01iestqu.apps.googleusercontent.com";
             opts.ClientSecret = "czbp7FWXp6fuov3Ef1n8sodJ";
-            opts.SignInScheme = IdentityConstants.ExternalScheme;
+           // opts.SignInScheme = IdentityConstants.ExternalScheme;
         });
             services.AddControllersWithViews();
         }

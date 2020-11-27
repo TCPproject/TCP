@@ -9,13 +9,17 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace TCPproject.Controllers
 {
-    
+    [Authorize]
     public class HomeController : Controller
     {
-        [Authorize]
+        [AllowAnonymous]
         public IActionResult Index()
         {
-            return Content(User.Identity.Name);
+            return View();
+        }
+        public IActionResult About()
+        {
+            return View();
         }
     }
 }
