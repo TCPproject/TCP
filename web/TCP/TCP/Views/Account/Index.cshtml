@@ -1,0 +1,43 @@
+﻿@model TCP.ViewModels.LoginModel
+
+@{
+    ViewData["Title"] = "MainPage";
+}
+
+<h2>Вход на сайт</h2>
+<table>
+    <tr>
+        <td>
+            <div style="border-radius:25px; border:2px solid black; padding:15px;">
+                <form asp-action="Index" asp-controller="Account" asp-anti-forgery="true">
+                    <div class="validation" asp-validation-summary="ModelOnly"></div>
+                    <div>
+                        <div class="form-group">
+                            <label asp-for="Email">Введите Email</label>
+                            <input type="text" asp-for="Email" />
+                            <span asp-validation-for="Email" />
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Password">Введите пароль</label>
+                            <input asp-for="Password" />
+                            <span asp-validation-for="Password" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Войти" class="btn btn-outline-dark" />
+                        </div>
+                    </div>
+                </form>
+
+                <a asp-action="Register" asp-controller="Account">Регистрация</a>
+            </div>
+        </td>
+        <td>
+            <form asp-action="GoogleLogin" asp-controller="Account" asp-antiforgery="true">
+                <button type="submit" value="Войти">
+                    <img src="https://media.giphy.com/media/ikd9FkIpM3zKKCClcm/giphy.gif" alt="Здесь могла быть ваша реклама" />
+                </button>
+            </form>
+        </td>
+    </tr>
+</table>
+

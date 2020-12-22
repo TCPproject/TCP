@@ -17,7 +17,37 @@ namespace TCPproject.Controllers
     [AllowAnonymous, Route("account")]
     public class AccountController : Controller
     {
-        
+        private readonly UserContext _context;
+        public AccountController(UserContext context)
+        {
+            _context = context;
+        }
+        public IActionResult Index()
+        {
+            return View();
+        }
+        [Route("Login")]
+        public IActionResult Login()
+        {
+            return View();
+        }
+        [Route("Register")]
+        public IActionResult Register()
+        {
+            return View();
+        }
+
+        public async Task<IActionResult> Create([Bind("Id,Nickname,Highscore,Email,Password")] User user)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Add(user);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(user);
+        }
+
         [Route("google-login")]
         public IActionResult GoogleLogin()
         {
