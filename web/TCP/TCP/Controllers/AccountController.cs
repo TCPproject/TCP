@@ -264,18 +264,15 @@ namespace TCP.Controllers
                     claim.Issuer,
                     claim.OriginalIssuer,
                     claim.Type,
-                    claim.Value,
+                    claim.Value
                 });
             name = result.Principal.Identities.FirstOrDefault().Name;
-            pass = claims.FirstOrDefault().Value;
-            char[] stringArray = pass.ToCharArray();
-            Array.Reverse(stringArray);
-            mail =  new string(stringArray);
+            mail =  claims.FirstOrDefault(x => x.Type == ClaimValueTypes.Email).Value;
             User user = await _context.Users.FirstOrDefaultAsync(u => u.Email == mail);
             if (user == null)
             {
                 // добавляем пользователя в бд
-                _context.Users.Add(new User { Nickname = name, Email = mail, Password = pass });
+                _context.Users.Add(new User { Nickname = name, Email = mail, Password = null });
                 await _context.SaveChangesAsync();
 
                 return RedirectToAction("Game");
