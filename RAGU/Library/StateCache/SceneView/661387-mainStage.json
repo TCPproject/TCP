@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":19.162057876586915,"y":1.128061056137085,"z":-27.003480911254884},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":45.6827278137207,"orthographic":true}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-7.11551570892334,"y":1.0153244733810425,"z":-4.169921875},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":11.593683242797852,"orthographic":true}
+>>>>>>> Orange
