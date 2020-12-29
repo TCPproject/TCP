@@ -350,3 +350,5 @@ C:\Users\misha\Documents\TCP\TCP\web\TCP\TCP\obj\Debug\net5.0\TCP.dll
 C:\Users\misha\Documents\TCP\TCP\web\TCP\TCP\obj\Debug\net5.0\ref\TCP.dll
 C:\Users\misha\Documents\TCP\TCP\web\TCP\TCP\obj\Debug\net5.0\TCP.pdb
 C:\Users\misha\Documents\TCP\TCP\web\TCP\TCP\obj\Debug\net5.0\TCP.genruntimeconfig.cache
+C:\Users\misha\Documents\TCP\TCP\web\TCP\TCP\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\misha\Documents\TCP\TCP\web\TCP\TCP\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
