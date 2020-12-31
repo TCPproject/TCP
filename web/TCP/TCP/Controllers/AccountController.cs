@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using System.Security.Claims;
+using System.Security.Cryptography;
+using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using Microsoft.EntityFrameworkCore;
 using TCP.Models;
 using TCP.ViewModels;
@@ -67,8 +69,25 @@ namespace TCP.Controllers
                 User user = await _context.Users.FirstOrDefaultAsync(u => u.Email == model.Email);
                 if (user == null)
                 {
+                    string pass = model.Password;
+                    byte[] salt = new byte[128 / 8];
+                    using (var rng = RandomNumberGenerator.Create())
+                    {
+                        rng.GetBytes(salt);
+                    }
+                    Console.WriteLine($"Salt: {Convert.ToBase64String(salt)}");
+
+                    // derive a 256-bit subkey (use HMACSHA1 with 10,000 iterations)
+                    string hashed = Convert.ToBase64String(KeyDerivation.Pbkdf2(
+                        password: pass,
+                        salt: salt,
+                        prf: KeyDerivationPrf.HMACSHA1,
+                        iterationCount: 10000,
+                        numBytesRequested: 256 / 8));
+                    pass = $"{hashed}";
+                    Console.WriteLine($"Hashed: {hashed}");
                     // добавляем пользователя в бд
-                    _context.Users.Add(new User { Nickname = model.Nickname, Email = model.Email, Password = model.Password });
+                    _context.Users.Add(new User { Nickname = model.Nickname, Email = model.Email, Password = pass });
                     await _context.SaveChangesAsync();
 
                     await Authenticate(model.Email); // аутентификация

@@ -38,12 +38,17 @@ namespace TCP.ViewModels
             }
             set
             {
-                byte[] salt = Encoding.ASCII.GetBytes(email);
+                
+                password = value;
+                byte[] salt = new byte[128 / 8];
                 using (var rng = RandomNumberGenerator.Create())
                 {
                     rng.GetBytes(salt);
                 }
-                password = value;
+                Console.WriteLine($"Salt: {Convert.ToBase64String(salt)}");
+
+                // derive a 256-bit subkey (use HMACSHA1 with 10,000 iterations)
+                
             }
         }
     }
