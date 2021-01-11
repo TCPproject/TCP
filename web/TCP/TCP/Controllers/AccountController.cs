@@ -14,6 +14,7 @@ using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using Microsoft.EntityFrameworkCore;
 using TCP.Models;
 using TCP.ViewModels;
+using System.Text;
 
 namespace TCP.Controllers
 {
@@ -69,8 +70,9 @@ namespace TCP.Controllers
                 User user = await _context.Users.FirstOrDefaultAsync(u => u.Email == model.Email);
                 if (user == null)
                 {
-                    string pass = model.Password;
-                    byte[] salt = new byte[128 / 8];
+                    string pass = model.Password; 
+                    
+                    byte[] salt = Encoding.ASCII.GetBytes(model.Email); 
                     using (var rng = RandomNumberGenerator.Create())
                     {
                         rng.GetBytes(salt);
