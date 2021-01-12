@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: b0e13605b4e0d134d8f711260ad6c6c1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5160162129000925668
+    second: cucumber_idle_0
+  - first:
+      213: 1238945554956781995
+    second: cucumber_idle_1
+  - first:
+      213: -9103986793385276294
+    second: cucumber_idle_2
+  - first:
+      213: -5235328081166078727
+    second: cucumber_idle_3
+  - first:
+      213: -4542147359618925792
+    second: cucumber_idle_4
+  - first:
+      213: -3144580697697223760
+    second: cucumber_idle_5
+  - first:
+      213: -5708394386904850477
+    second: cucumber_idle_6
+  - first:
+      213: 352721422983314137
+    second: cucumber_idle_7
+  - first:
+      213: 5437207926538281799
+    second: cucumber_idle_8
+  - first:
+      213: -830764607568709582
+    second: cucumber_idle_9
+  - first:
+      213: -7272524237888130623
+    second: cucumber_idle_10
+  - first:
+      213: -2981923025962346101
+    second: cucumber_idle_11
+  - first:
+      213: 2167824869299459473
+    second: cucumber_idle_12
+  - first:
+      213: 6243683664742349535
+    second: cucumber_idle_13
+  - first:
+      213: -3457544091814288411
+    second: cucumber_idle_14
+  - first:
+      213: 5113870155662310625
+    second: cucumber_idle_15
+  - first:
+      213: -6046326014853677022
+    second: cucumber_idle_16
+  - first:
+      213: -2081438539588868143
+    second: cucumber_idle_17
+  - first:
+      213: 2557667014628272025
+    second: cucumber_idle_18
+  - first:
+      213: 3505130362576980173
+    second: cucumber_idle_19
+  - first:
+      213: 1422247586899626582
+    second: cucumber_idle_20
+  - first:
+      213: 6744614540958890933
+    second: cucumber_idle_21
+  - first:
+      213: -7556693876571554948
+    second: cucumber_idle_22
+  - first:
+      213: -9002474561939199423
+    second: cucumber_idle_23
+  - first:
+      213: -1643348153145688016
+    second: cucumber_idle_24
+  - first:
+      213: 8383229290338856240
+    second: cucumber_idle_25
+  - first:
+      213: 5384444616219977965
+    second: cucumber_idle_26
+  - first:
+      213: -5861761249711867133
+    second: cucumber_idle_27
+  - first:
+      213: 7971089451130977112
+    second: cucumber_idle_28
+  - first:
+      213: -2518823634901843902
+    second: cucumber_idle_29
+  - first:
+      213: -337121133695531193
+    second: cucumber_idle_30
+  - first:
+      213: 2503940605358914229
+    second: cucumber_idle_31
+  - first:
+      213: -8142642000314568692
+    second: cucumber_idle_32
+  - first:
+      213: 5826572484501613051
+    second: cucumber_idle_33
+  - first:
+      213: 3921069556425018063
+    second: cucumber_idle_34
+  - first:
+      213: -8126317960532117947
+    second: cucumber_idle_35
+  - first:
+      213: 1450786595337295937
+    second: cucumber_idle_36
+  - first:
+      213: -4949034963022983559
+    second: cucumber_idle_37
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cucumber_idle_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 144
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e9068add149c9740800000000000000
+      internalID: 5160162129000925668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumber_idle_1
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 16
+        width: 144
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba98f330b6e913110800000000000000
+      internalID: 1238945554956781995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumber_idle_2
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 16
+        width: 144
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c4c641f3428a180800000000000000
+      internalID: -9103986793385276294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumber_idle_3
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 16
+        width: 144
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fce77f19d06857b0800000000000000
+      internalID: -5235328081166078727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
