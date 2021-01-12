@@ -21,6 +21,34 @@ namespace TCP.Controllers
     
     public class AccountController : Controller
     {
+        public string Saltingpass(string name = null, string mail = null, string pass = null)
+        {
+            string passw;
+            if (pass == null)
+            {
+                passw = name;
+            }
+            else
+            {
+                passw = pass;
+            };
+
+            byte[] salt = Encoding.ASCII.GetBytes(mail);
+            Random rng = new Random(mail.GetHashCode());
+            rng.NextBytes(salt);
+            Console.WriteLine($"Salt: {Convert.ToBase64String(salt)}");
+
+            // derive a 256-bit subkey (use HMACSHA1 with 10,000 iterations)
+            string hashed = Convert.ToBase64String(KeyDerivation.Pbkdf2(
+                password: passw,
+                salt: salt,
+                prf: KeyDerivationPrf.HMACSHA1,
+                iterationCount: 10000,
+                numBytesRequested: 256 / 8));
+            passw = $"{hashed}";
+            return passw;
+        }
+
         private readonly UserContext _context;
 
         public AccountController(UserContext context)
@@ -44,7 +72,9 @@ namespace TCP.Controllers
         {
             if (ModelState.IsValid)
             {
-                User user = await _context.Users.FirstOrDefaultAsync(u => u.Email == model.Email && u.Password == model.Password);
+                User user =  _context.Users.ToArray().FirstOrDefault(u => u.Email == model.Email &&
+                u.Password == model.Password);
+                
                 if (user != null)
                 {
                     await Authenticate(model.Email); // аутентификация
@@ -55,6 +85,7 @@ namespace TCP.Controllers
             }
             return View(model);
         }
+
         [HttpGet]
         
         public IActionResult Register()
@@ -70,26 +101,9 @@ namespace TCP.Controllers
                 User user = await _context.Users.FirstOrDefaultAsync(u => u.Email == model.Email);
                 if (user == null)
                 {
-                    string pass = model.Password; 
-                    
-                    byte[] salt = Encoding.ASCII.GetBytes(model.Email); 
-                    using (var rng = RandomNumberGenerator.Create())
-                    {
-                        rng.GetBytes(salt);
-                    }
-                    Console.WriteLine($"Salt: {Convert.ToBase64String(salt)}");
-
-                    // derive a 256-bit subkey (use HMACSHA1 with 10,000 iterations)
-                    string hashed = Convert.ToBase64String(KeyDerivation.Pbkdf2(
-                        password: pass,
-                        salt: salt,
-                        prf: KeyDerivationPrf.HMACSHA1,
-                        iterationCount: 10000,
-                        numBytesRequested: 256 / 8));
-                    pass = $"{hashed}";
-                    Console.WriteLine($"Hashed: {hashed}");
                     // добавляем пользователя в бд
-                    _context.Users.Add(new User { Nickname = model.Nickname, Email = model.Email, Password = pass });
+                    _context.Users.Add(new User { Nickname = model.Nickname, Email = model.Email, 
+                        Password = model.Password });
                     await _context.SaveChangesAsync();
 
                     await Authenticate(model.Email); // аутентификация
@@ -127,7 +141,8 @@ namespace TCP.Controllers
         {
             if (ModelState.IsValid)
             {
-                User user = await _context.Users.FirstOrDefaultAsync(u => u.Email == model.Email && u.Password == model.Password);
+                User user = _context.Users.ToArray().FirstOrDefault(u => u.Email == model.Email &&
+                model.Password == u.Password);
                 if (user != null)
                 {
                     await Authenticate(model.Email); // аутентификация
@@ -289,19 +304,19 @@ namespace TCP.Controllers
                 });
             name = result.Principal.Identities.FirstOrDefault().Name;
             mail =  claims.FirstOrDefault(x => x.Type == ClaimValueTypes.Email).Value;
+            pass = Saltingpass(name, mail, null);
+
             User user = await _context.Users.FirstOrDefaultAsync(u => u.Email == mail);
             if (user == null)
             {
                 // добавляем пользователя в бд
-                _context.Users.Add(new User { Nickname = name, Email = mail, Password = null });
+                _context.Users.Add(new User { Nickname = name, Email = mail, Password = pass });
                 await _context.SaveChangesAsync();
 
                 return RedirectToAction("Game");
             }
             else { return RedirectToAction("Game"); }
         }
-
-
 
         private bool UserExists(int id)
         {
