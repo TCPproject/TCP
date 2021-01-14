@@ -4,11 +4,13 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
 
-<h4>User</h4>
-<hr />
-<div class="row">
+<div style="border-radius:25px; border:2px solid black; padding:15px; background-color: white; width: fit-content">
+    <h1>Edit</h1>
+
+    <h4>User</h4>
+    <hr />
+
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -41,7 +43,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Table">Back to List</a>
 </div>
 
 @section Scripts {

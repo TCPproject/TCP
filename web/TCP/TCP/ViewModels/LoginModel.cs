@@ -18,8 +18,8 @@ namespace TCP.ViewModels
             string passw = pass;
 
             byte[] salt = Encoding.ASCII.GetBytes(mail);
-            Random rng = new Random(mail.GetHashCode());
-            rng.NextBytes(salt);
+            //Random rng = new Random(mail.GetHashCode());
+            //rng.NextBytes(salt);
             Console.WriteLine($"Salt: {Convert.ToBase64String(salt)}");
 
             // derive a 256-bit subkey (use HMACSHA1 with 10,000 iterations)
