@@ -372,3 +372,4 @@ D:\TCP\web\TCPproject\TCPproject\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.
 D:\TCP\web\TCPproject\TCPproject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\TCP\web\TCPproject\TCPproject\obj\Debug\net5.0\TCPproject.csprojAssemblyReference.cache
 E:\TCP\web\TCPproject\TCPproject\obj\Debug\net5.0\TCPproject.csprojAssemblyReference.cache
+E:\TCP\web\TCPproject\TCPproject\obj\Debug\net5.0\Razor\Views\Account\Index.cshtml.g.cs

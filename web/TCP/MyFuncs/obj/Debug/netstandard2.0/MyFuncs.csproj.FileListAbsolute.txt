@@ -1,0 +1,9 @@
+C:\Users\misha\Documents\TCP\TCP\web\TCP\MyFuncs\bin\Debug\netstandard2.0\MyFuncs.deps.json
+C:\Users\misha\Documents\TCP\TCP\web\TCP\MyFuncs\bin\Debug\netstandard2.0\MyFuncs.dll
+C:\Users\misha\Documents\TCP\TCP\web\TCP\MyFuncs\bin\Debug\netstandard2.0\MyFuncs.pdb
+C:\Users\misha\Documents\TCP\TCP\web\TCP\MyFuncs\obj\Debug\netstandard2.0\MyFuncs.csprojAssemblyReference.cache
+C:\Users\misha\Documents\TCP\TCP\web\TCP\MyFuncs\obj\Debug\netstandard2.0\MyFuncs.AssemblyInfoInputs.cache
+C:\Users\misha\Documents\TCP\TCP\web\TCP\MyFuncs\obj\Debug\netstandard2.0\MyFuncs.AssemblyInfo.cs
+C:\Users\misha\Documents\TCP\TCP\web\TCP\MyFuncs\obj\Debug\netstandard2.0\MyFuncs.csproj.CoreCompileInputs.cache
+C:\Users\misha\Documents\TCP\TCP\web\TCP\MyFuncs\obj\Debug\netstandard2.0\MyFuncs.dll
+C:\Users\misha\Documents\TCP\TCP\web\TCP\MyFuncs\obj\Debug\netstandard2.0\MyFuncs.pdb

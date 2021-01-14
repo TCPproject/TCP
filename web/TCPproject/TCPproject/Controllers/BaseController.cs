@@ -7,7 +7,7 @@ namespace TCPproject.Controllers
     public class BaseController : Controller
     {
         // 
-        // GET: /HelloWorld/
+        // GET: /Base/
 
         public IActionResult Index()
         {
@@ -15,7 +15,7 @@ namespace TCPproject.Controllers
         }
 
         // 
-        // GET: /HelloWorld/Welcome/ 
+        // GET: /Base/Welcome/ 
 
         public IActionResult Welcome(string name, int numTimes = 1)
         {
