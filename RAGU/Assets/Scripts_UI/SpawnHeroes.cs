@@ -8,9 +8,10 @@ public class SpawnHeroes : MonoBehaviour
     void Update()
     {
         Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 Position = new Vector2((int)cursorPos.x, (int)cursorPos.y);
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            Instantiate(Heroes, cursorPos, Quaternion.identity);
+            Instantiate(Heroes, Position, Quaternion.identity);
         }
     }
 }

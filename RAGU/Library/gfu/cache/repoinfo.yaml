@@ -13,26 +13,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2020-12-07T11:39:34.222+03:00
-  initializedAtString: 2020-12-05T07:16:41.347+03:00
+  lastUpdatedAtString: 2021-01-14T16:56:20.453+03:00
+  initializedAtString: 2021-01-12T14:19:49.857+03:00
   currentGitRemote:
     name: origin
-    url: git@github.com:TCPproject/TCP.git
+    url: https://github.com/TCPproject/TCP.git
     login: 
     user: 
     host: 
     function: 0
     token: 
   currentGitBranch:
-    name: David
-    tracking: 
+    name: DavidBrum
+    tracking: origin/DavidBrum
   currentConfigBranch:
-    name: David
+    name: DavidBrum
     remote:
-      name: 
-      url: 
-    trackingBranch: 
+      name: origin
+      url: https://github.com/TCPproject/TCP.git
+    trackingBranch: DavidBrum
   currentConfigRemote:
     name: origin
-    url: git@github.com:TCPproject/TCP.git
+    url: https://github.com/TCPproject/TCP.git
   currentHead: 
