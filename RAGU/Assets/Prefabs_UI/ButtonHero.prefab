@@ -243,6 +243,7 @@ GameObject:
   - component: {fileID: 7842520461287946403}
   - component: {fileID: 4488532718568449203}
   - component: {fileID: 3540097212284411087}
+  - component: {fileID: 2665107246589060192}
   - component: {fileID: 7309961035126655733}
   m_Layer: 5
   m_Name: ButtonHero
@@ -352,18 +353,20 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4488532718568449203}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &2665107246589060192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6785311401848399760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60172ce60817fed42ad9e4ca2d8f9b36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Heroes: {fileID: 5613565445449310730, guid: 33afd9f861d89fc498febef9af153615, type: 3}
 --- !u!114 &7309961035126655733
 MonoBehaviour:
   m_ObjectHideFlags: 0

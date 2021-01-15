@@ -64,7 +64,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joybutton.cs" />
@@ -90,13 +89,12 @@
     <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\Teleport.cs" />
     <Compile Include="Assets\Scripts\Weapon.cs" />
-=======
-    <Compile Include="Assets\Scripts\Enemy_AI.cs" />
     <Compile Include="Assets\Scripts_UI\FollowCamera.cs" />
     <Compile Include="Assets\Scripts_UI\FollowMouse.cs" />
     <Compile Include="Assets\Scripts_UI\HeroShopManager.cs" />
+    <Compile Include="Assets\Scripts_UI\Ready.cs" />
     <Compile Include="Assets\Scripts_UI\SpawnHeroes.cs" />
->>>>>>> origin/Debchik228
+    <Compile Include="Assets\Scripts_UI\heroesFollow.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -710,7 +708,16 @@
       <HintPath>C:/TCP/RAGU/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup></ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{0A357B4E-78C3-59A4-CAA4-B91DAAFD7A10}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{C6C1A242-3215-6BA1-50BB-8817EF76DD2F}</Project>
+      <Name>NavMeshComponents</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
