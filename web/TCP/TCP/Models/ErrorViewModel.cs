@@ -1,5 +1,3 @@
-using System;
-
 namespace TCP.Models
 {
     public class ErrorViewModel
