@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Cryptography.KeyDerivation;
+using System;
 using System.ComponentModel.DataAnnotations;
-using System.Security.Cryptography;
-using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using System.Text;
 
 namespace TCP.ViewModels
 {
 
-    
+
     public class LoginModel
     {
         public string Saltingpass(string mail = null, string pass = null)
@@ -36,7 +32,7 @@ namespace TCP.ViewModels
         private string password;
 
         [Required(ErrorMessage = "Не указан Email")]
-        public string Email 
+        public string Email
         {
             get
             {
@@ -50,8 +46,8 @@ namespace TCP.ViewModels
 
         [Required(ErrorMessage = "Не указан пароль")]
         [DataType(DataType.Password)]
-        public string Password 
-        { 
+        public string Password
+        {
             get
             {
                 return password;
@@ -59,8 +55,8 @@ namespace TCP.ViewModels
             set
             {
 
-                password =  Saltingpass(email,value);  
-                
+                password = Saltingpass(email, value);
+
             }
         }
     }

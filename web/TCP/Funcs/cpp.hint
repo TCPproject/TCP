@@ -1,2 +1,0 @@
-#define FUNCS_API __declspec(dllexport)
-#define FUNCS_API __declspec(dllimport)
