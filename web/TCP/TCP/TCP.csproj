@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Views\Account\Game_Index.html" />
+    <Content Include="Views\Game\Game_Index.html" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,14 +24,6 @@
 
   <ItemGroup>
     <Folder Include="Images\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="wwwroot\Build\Build.data.unityweb" />
-    <None Include="wwwroot\Build\Build.wasm.code.unityweb" />
-    <None Include="wwwroot\Build\Build.wasm.framework.unityweb" />
-    <None Include="wwwroot\Build\UnityLoader.js" />
-    <None Include="wwwroot\TemplateData\UnityProgress.js" />
   </ItemGroup>
 
 </Project>

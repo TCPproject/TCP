@@ -96,14 +96,10 @@ namespace TCP.Controllers
             return View(user);
         }
 
-        public IActionResult Game()
-        { 
-
-            return View();
-        }
-
         public IActionResult CurUser()
         {
+            string Data = Request.Form.FirstOrDefault(e => e.Value == _context.Users.FirstOrDefault().Id.ToString()).Value;
+            _context.Users.FirstOrDefault().Highscore = int.Parse(Data);
             return Content( 
                 _context.Users.FirstOrDefault().Highscore.ToString()
                 );
@@ -127,7 +123,7 @@ namespace TCP.Controllers
                 {
                     await Authenticate(model.Email); // аутентификация
 
-                    return RedirectToAction("Game");
+                    return Redirect("~/Game/Game");
                 }
                 ModelState.AddModelError("", "Некорректные логин и(или) пароль");
             }
@@ -160,7 +156,7 @@ namespace TCP.Controllers
 
                     await Authenticate(model.Email); // аутентификация
 
-                    return RedirectToAction("Game");
+                    return Redirect("~/Game/Game");
                 }
                 else
                     ModelState.AddModelError("", "Некорректные логин и(или) пароль");
@@ -199,7 +195,7 @@ namespace TCP.Controllers
                 {
                     await Authenticate(model.Email); // аутентификация
 
-                    return RedirectToAction("Game");
+                    return Redirect("~/Game/Game");
                 }
                 ModelState.AddModelError("", "Некорректные логин и(или) пароль");
             }
@@ -367,7 +363,7 @@ namespace TCP.Controllers
 
                 return RedirectToAction("Game");
             }
-            else { return RedirectToAction("Game"); }
+            else { return Redirect("~/Game/Game"); }
         }
 
         private bool UserExists(int id)
