@@ -8,7 +8,7 @@ using TCP.Models;
 
 namespace TCP.Controllers
 {
-    [Route("api/[controller]")]
+    
     public class GameController : Controller
     {
 

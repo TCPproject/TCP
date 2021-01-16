@@ -529,5 +529,5 @@ D:\TCP\web\TCP\TCP\obj\Debug\net5.0\TCP.dll
 D:\TCP\web\TCP\TCP\obj\Debug\net5.0\ref\TCP.dll
 D:\TCP\web\TCP\TCP\obj\Debug\net5.0\TCP.pdb
 D:\TCP\web\TCP\TCP\obj\Debug\net5.0\TCP.genruntimeconfig.cache
-C:\Users\misha\Documents\TCP\TCP\web\TCP\TCP\obj\Debug\net5.0\Razor\Views\Account\CurUser.cshtml.g.cs
 C:\Users\misha\Documents\TCP\TCP\web\TCP\TCP\obj\Debug\net5.0\Razor\Views\Game\Game.cshtml.g.cs
+C:\Users\misha\Documents\TCP\TCP\web\TCP\TCP\obj\Debug\net5.0\Razor\Views\Game\CurUser.cshtml.g.cs
