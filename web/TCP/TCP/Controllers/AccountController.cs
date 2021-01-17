@@ -201,7 +201,11 @@ namespace TCP.Controllers
             }
             return View(model);
         }
+        public async Task<IActionResult> Leaderboard()
+        {
 
+            return View(await _context.Users.ToListAsync());
+        }
 
         public async Task<IActionResult> Table()
         {
