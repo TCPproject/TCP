@@ -26,6 +26,7 @@ namespace TCP.Controllers
         public async Task<RequestController> Get()
         {
             string curmail = User.Identity.Name;
+
             string Data = Request.Form["CurScore"].FirstOrDefault();
             IQueryable<User> queryables = _context.Users.Where(u => u.Email == curmail);
             if (queryables == null)

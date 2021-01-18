@@ -365,9 +365,15 @@ namespace TCP.Controllers
                 _context.Users.Add(new User { Nickname = name, Email = mail, Password = pass });
                 await _context.SaveChangesAsync();
 
+                await Authenticate(mail);
+
                 return Redirect("~/Game/Game");
             }
-            else { return Redirect("~/Game/Game"); }
+            else 
+            {
+                await Authenticate(mail);
+                return Redirect("~/Game/Game"); 
+            }
         }
 
         private bool UserExists(int id)
