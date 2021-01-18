@@ -4,11 +4,13 @@
     ViewData["Title"] = "Leaderboard";
 }
 
+
+
 <div style="border-radius:25px; border:2px solid black; padding:15px; background-color: white; width: fit-content">
     <h1>Table of Users</h1>
 
     
-    <table class="table">
+    <table class="table" style="align-content:center">
         <thead>
             <tr>
                 
@@ -26,17 +28,14 @@
         <tbody>
             @foreach (var item in Model)
             {
-                <tr>
-                    
+                <tr>  
                     <td>
                         @Html.DisplayFor(modelItem => item.Nickname)
                     </td>
                     
                     <td>
                         @Html.DisplayFor(modelItem => item.Highscore)
-                    </td>
-                    
-                    
+                    </td>                    
                 </tr>
             }
         </tbody>

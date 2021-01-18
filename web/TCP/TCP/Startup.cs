@@ -1,10 +1,12 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
 using System.IO;
@@ -28,6 +30,8 @@ namespace TCP
             string connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<UserContext>(options => options.UseSqlServer(connection));
 
+            services.AddHttpContextAccessor();
+
 
             // установка конфигурации подключения
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
@@ -40,7 +44,7 @@ namespace TCP
                     options.ClientId = "192862296186-l2ed5sngdq3etjcqt1d241lnf912dhsa.apps.googleusercontent.com";
                     options.ClientSecret = "f8CqLbyf7I5LHGFhDgSwGJ60";
                 });
-
+            services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddControllersWithViews();
         }
 
@@ -81,8 +85,8 @@ namespace TCP
                     name: "default",
                     pattern: "{controller=Account}/{action=Index}/{id?}");
             });
-
             
+
         }
     }
 }

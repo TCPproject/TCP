@@ -533,3 +533,4 @@ C:\Users\misha\Documents\TCP\TCP\web\TCP\TCP\obj\Debug\net5.0\Razor\Views\Game\C
 D:\TCP\web\TCP\TCP\obj\Debug\net5.0\Razor\Views\Account\Leaderboard.cshtml.g.cs
 D:\TCP\web\TCP\TCP\obj\Debug\net5.0\Razor\Views\Game\CurUser.cshtml.g.cs
 D:\TCP\web\TCP\TCP\obj\Debug\net5.0\Razor\Views\Game\Game.cshtml.g.cs
+C:\Users\misha\Documents\TCP\TCP\web\TCP\TCP\obj\Debug\net5.0\Razor\Views\Account\Leaderboard.cshtml.g.cs

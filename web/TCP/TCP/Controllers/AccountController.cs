@@ -132,6 +132,7 @@ namespace TCP.Controllers
 
         [HttpGet]
 
+
         public IActionResult Register()
         {
             return View();
@@ -201,10 +202,9 @@ namespace TCP.Controllers
             }
             return View(model);
         }
-        public async Task<IActionResult> Leaderboard()
+        public IActionResult Leaderboard()
         {
-
-            return View(await _context.Users.ToListAsync());
+            return View(_context.Users.OrderByDescending(u => u.Highscore).ToList());
         }
 
         public async Task<IActionResult> Table()

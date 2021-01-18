@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\TCP\\web\\TCP\\TCP\\TCP.csproj": {}
+    "C:\\Users\\misha\\Documents\\TCP\\TCP\\web\\TCP\\TCP\\TCP.csproj": {}
   },
   "projects": {
-    "D:\\TCP\\web\\TCP\\TCP\\TCP.csproj": {
+    "C:\\Users\\misha\\Documents\\TCP\\TCP\\web\\TCP\\TCP\\TCP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TCP\\web\\TCP\\TCP\\TCP.csproj",
+        "projectUniqueName": "C:\\Users\\misha\\Documents\\TCP\\TCP\\web\\TCP\\TCP\\TCP.csproj",
         "projectName": "TCP",
-        "projectPath": "D:\\TCP\\web\\TCP\\TCP\\TCP.csproj",
-        "packagesPath": "C:\\Users\\neret\\.nuget\\packages\\",
-        "outputPath": "D:\\TCP\\web\\TCP\\TCP\\obj\\",
+        "projectPath": "C:\\Users\\misha\\Documents\\TCP\\TCP\\web\\TCP\\TCP\\TCP.csproj",
+        "packagesPath": "C:\\Users\\misha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\misha\\Documents\\TCP\\TCP\\web\\TCP\\TCP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\neret\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\misha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -89,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

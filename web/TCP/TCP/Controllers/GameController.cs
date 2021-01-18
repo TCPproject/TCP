@@ -1,8 +1,11 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Primitives;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using TCP.Models;
 
@@ -12,11 +15,13 @@ namespace TCP.Controllers
     public class GameController : Controller
     {
 
-        private readonly UserContext _context;
+        private readonly UserManager<User> _userManager;
 
-        public GameController(UserContext context)
+   
+
+        public GameController(UserManager<User> userManager)
         {
-            _context = context;
+            _userManager = userManager;
         }
 
 
@@ -28,17 +33,17 @@ namespace TCP.Controllers
 
         public ActionResult Game()
         {
+            
             return View();
         }
 
-        [HttpPost]
-        public IActionResult CurUser()
+        [HttpGet]
+        public ActionResult<IEnumerable<string>> CurUser()
         {
-            string Data = Request.Form.FirstOrDefault(e => e.Value == _context.Users.FirstOrDefault().Id.ToString()).Value;
-            _context.Users.FirstOrDefault().Highscore = int.Parse(Data);
-            return Content(
-                _context.Users.FirstOrDefault().Highscore.ToString()
-                );
+            string UserName = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+
+            return Ok(UserName);
         }
 
         // GET: Game/Details/5
@@ -88,26 +93,6 @@ namespace TCP.Controllers
                 return View();
             }
         }
-
-        // GET: Game/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: Game/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
     }
 }
+
