@@ -365,7 +365,7 @@ namespace TCP.Controllers
                 _context.Users.Add(new User { Nickname = name, Email = mail, Password = pass });
                 await _context.SaveChangesAsync();
 
-                return RedirectToAction("Game");
+                return Redirect("~/Game/Game");
             }
             else { return Redirect("~/Game/Game"); }
         }

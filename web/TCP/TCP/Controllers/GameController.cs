@@ -15,13 +15,11 @@ namespace TCP.Controllers
     public class GameController : Controller
     {
 
-        private readonly UserManager<User> _userManager;
+        private readonly UserContext _context;
 
-   
-
-        public GameController(UserManager<User> userManager)
+        public GameController(UserContext context)
         {
-            _userManager = userManager;
+            _context = context;
         }
 
 
@@ -40,10 +38,9 @@ namespace TCP.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> CurUser()
         {
-            string UserName = User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-
-            return Ok(UserName);
+            return Content(
+                _context.Users.FirstOrDefault().Highscore.ToString()
+                ) ;
         }
 
         // GET: Game/Details/5

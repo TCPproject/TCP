@@ -1,18 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\misha\\Documents\\TCP\\TCP\\web\\TCP\\TCP\\TCP.csproj": {}
+    "E:\\TCP\\web\\TCP\\TCP\\TCP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\misha\\Documents\\TCP\\TCP\\web\\TCP\\TCP\\TCP.csproj": {
+    "E:\\TCP\\web\\TCP\\TCP\\TCP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\misha\\Documents\\TCP\\TCP\\web\\TCP\\TCP\\TCP.csproj",
+        "projectUniqueName": "E:\\TCP\\web\\TCP\\TCP\\TCP.csproj",
         "projectName": "TCP",
-        "projectPath": "C:\\Users\\misha\\Documents\\TCP\\TCP\\web\\TCP\\TCP\\TCP.csproj",
+        "projectPath": "E:\\TCP\\web\\TCP\\TCP\\TCP.csproj",
         "packagesPath": "C:\\Users\\misha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\misha\\Documents\\TCP\\TCP\\web\\TCP\\TCP\\obj\\",
+        "outputPath": "E:\\TCP\\web\\TCP\\TCP\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\misha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -47,6 +50,10 @@
             "Microsoft.AspNetCore.Cryptography.KeyDerivation": {
               "target": "Package",
               "version": "[5.0.1, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.AspNetCore.Mvc.Core": {
               "target": "Package",

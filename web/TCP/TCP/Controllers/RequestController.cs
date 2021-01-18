@@ -3,7 +3,9 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
 using TCP.Models;
 
 namespace TCP.Controllers
@@ -21,12 +23,22 @@ namespace TCP.Controllers
         }
 
         [HttpPost]
-        public ActionResult<RequestController> Get()
+        public async Task<RequestController> Get()
         {
+            string curmail = User.Identity.Name;
             string Data = Request.Form["CurScore"].FirstOrDefault();
-            
-            _context.Users.FirstOrDefault().Highscore = int.Parse(Data);
-            return Redirect("~/Game/CurUser");
+            IQueryable<User> queryables = _context.Users.Where(u => u.Email == curmail);
+            if (queryables == null)
+            {
+                return null;
+            }
+            else
+            {
+                queryables.FirstOrDefault().Highscore = int.Parse(Data);
+                _context.Update(queryables.FirstOrDefault());
+                _context.SaveChanges();
+            }
+            return null;
         }
 
     }
