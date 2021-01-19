@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\misha\\Documents\\TCP\\TCP\\web\\TCP\\TCP\\TCP.csproj": {}
+    "C:\\Users\\musli\\Desktop\\Unity Project\\Muslim\\TCP\\web\\TCP\\TCP\\TCP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\misha\\Documents\\TCP\\TCP\\web\\TCP\\TCP\\TCP.csproj": {
+    "C:\\Users\\musli\\Desktop\\Unity Project\\Muslim\\TCP\\web\\TCP\\TCP\\TCP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\misha\\Documents\\TCP\\TCP\\web\\TCP\\TCP\\TCP.csproj",
+        "projectUniqueName": "C:\\Users\\musli\\Desktop\\Unity Project\\Muslim\\TCP\\web\\TCP\\TCP\\TCP.csproj",
         "projectName": "TCP",
-        "projectPath": "C:\\Users\\misha\\Documents\\TCP\\TCP\\web\\TCP\\TCP\\TCP.csproj",
-        "packagesPath": "C:\\Users\\misha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\misha\\Documents\\TCP\\TCP\\web\\TCP\\TCP\\obj\\",
+        "projectPath": "C:\\Users\\musli\\Desktop\\Unity Project\\Muslim\\TCP\\web\\TCP\\TCP\\TCP.csproj",
+        "packagesPath": "C:\\Users\\musli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\musli\\Desktop\\Unity Project\\Muslim\\TCP\\web\\TCP\\TCP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\misha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\musli\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
