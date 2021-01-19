@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Game";
+}
+
+@section Scripts {
+    <script src="/TemplateData/UnityProgress.js"></script>
+    <script src="/Build/UnityLoader.js"></script>
+    <script>var unityInstance = UnityLoader.instantiate("unityContainer", "/Build/unity.json", { onProgress: UnityProgress });</script>
+    <script src="~/Scripts/XHRreader.js"></script>
+}
+
+<h2 style="text-shadow:2px 2px white;">GAME</h2>
+
+
+<div class="webgl-content">
+    <div id="unityContainer" style="width: 960px; height: 600px"></div>
+    <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">RedHotSweetPepper</div>
+    </div>
+</div>
+
+

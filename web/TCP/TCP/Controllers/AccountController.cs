@@ -1,24 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.AspNetCore.Authentication.Google;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
-using System.Security.Claims;
-using System.Security.Cryptography;
+using Microsoft.AspNetCore.Authentication.Google;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Cryptography.KeyDerivation;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
+using Microsoft.Extensions.Hosting;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Security.Claims;
+using System.Text;
+using System.Threading.Tasks;
 using TCP.Models;
 using TCP.ViewModels;
-using System.Text;
 
 namespace TCP.Controllers
 {
-    
+
     public class AccountController : Controller
     {
         public string Saltingpass(string name = null, string mail = null, string pass = null)
@@ -34,8 +38,8 @@ namespace TCP.Controllers
             };
 
             byte[] salt = Encoding.ASCII.GetBytes(mail);
-            Random rng = new Random(mail.GetHashCode());
-            rng.NextBytes(salt);
+            //Random rng = new Random(mail.GetHashCode());
+            //rng.NextBytes(salt);
             Console.WriteLine($"Salt: {Convert.ToBase64String(salt)}");
 
             // derive a 256-bit subkey (use HMACSHA1 with 10,000 iterations)
@@ -56,9 +60,49 @@ namespace TCP.Controllers
             _context = context;
         }
 
-        public IActionResult Game()
+        public User getData()
         {
-            return View();
+            User user = _context.Users.FirstOrDefault();
+            return user;
+        }
+
+        public async Task<IActionResult> setData(int id, [Bind("Id,Nickname,Email,Highscore,Password")] User user)
+        {
+            if (id != user.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(user);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!UserExists(user.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View(user);
+        }
+
+        public IActionResult CurUser()
+        {
+            string Data = Request.Form.FirstOrDefault(e => e.Value == _context.Users.FirstOrDefault().Id.ToString()).Value;
+            _context.Users.FirstOrDefault().Highscore = int.Parse(Data);
+            return Content( 
+                _context.Users.FirstOrDefault().Highscore.ToString()
+                );
         }
 
         [HttpGet]
@@ -72,14 +116,14 @@ namespace TCP.Controllers
         {
             if (ModelState.IsValid)
             {
-                User user =  _context.Users.ToArray().FirstOrDefault(u => u.Email == model.Email &&
-                u.Password == model.Password);
-                
+                User user = _context.Users.ToArray().FirstOrDefault(u => u.Email == model.Email &&
+               u.Password == model.Password);
+
                 if (user != null)
                 {
                     await Authenticate(model.Email); // аутентификация
 
-                    return RedirectToAction("Game");
+                    return Redirect("~/Game/Game");
                 }
                 ModelState.AddModelError("", "Некорректные логин и(или) пароль");
             }
@@ -87,7 +131,8 @@ namespace TCP.Controllers
         }
 
         [HttpGet]
-        
+
+
         public IActionResult Register()
         {
             return View();
@@ -102,13 +147,17 @@ namespace TCP.Controllers
                 if (user == null)
                 {
                     // добавляем пользователя в бд
-                    _context.Users.Add(new User { Nickname = model.Nickname, Email = model.Email, 
-                        Password = model.Password });
+                    _context.Users.Add(new User
+                    {
+                        Nickname = model.Nickname,
+                        Email = model.Email,
+                        Password = model.Password
+                    });
                     await _context.SaveChangesAsync();
 
                     await Authenticate(model.Email); // аутентификация
 
-                    return RedirectToAction("Game");
+                    return Redirect("~/Game/Game");
                 }
                 else
                     ModelState.AddModelError("", "Некорректные логин и(или) пароль");
@@ -147,14 +196,17 @@ namespace TCP.Controllers
                 {
                     await Authenticate(model.Email); // аутентификация
 
-                    return RedirectToAction("Game");
+                    return Redirect("~/Game/Game");
                 }
                 ModelState.AddModelError("", "Некорректные логин и(или) пароль");
             }
             return View(model);
         }
+        public IActionResult Leaderboard()
+        {
+            return View(_context.Users.OrderByDescending(u => u.Highscore).ToList());
+        }
 
-        
         public async Task<IActionResult> Table()
         {
             return View(await _context.Users.ToListAsync());
@@ -303,7 +355,7 @@ namespace TCP.Controllers
                     claim.Value
                 });
             name = result.Principal.Identities.FirstOrDefault().Name;
-            mail =  claims.FirstOrDefault(x => x.Type == ClaimValueTypes.Email).Value;
+            mail = claims.FirstOrDefault(x => x.Type == ClaimValueTypes.Email).Value;
             pass = Saltingpass(name, mail, null);
 
             User user = await _context.Users.FirstOrDefaultAsync(u => u.Email == mail);
@@ -313,9 +365,15 @@ namespace TCP.Controllers
                 _context.Users.Add(new User { Nickname = name, Email = mail, Password = pass });
                 await _context.SaveChangesAsync();
 
-                return RedirectToAction("Game");
+                await Authenticate(mail);
+
+                return Redirect("~/Game/Game");
             }
-            else { return RedirectToAction("Game"); }
+            else 
+            {
+                await Authenticate(mail);
+                return Redirect("~/Game/Game"); 
+            }
         }
 
         private bool UserExists(int id)

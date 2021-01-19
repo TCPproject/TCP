@@ -1,17 +1,16 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.StaticFiles;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication.Google;
+using System.IO;
 using TCP.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace TCP
 {
@@ -31,6 +30,8 @@ namespace TCP
             string connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<UserContext>(options => options.UseSqlServer(connection));
 
+            services.AddHttpContextAccessor();
+
 
             // установка конфигурации подключения
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
@@ -42,8 +43,8 @@ namespace TCP
                 {
                     options.ClientId = "192862296186-l2ed5sngdq3etjcqt1d241lnf912dhsa.apps.googleusercontent.com";
                     options.ClientSecret = "f8CqLbyf7I5LHGFhDgSwGJ60";
-                }); 
-                
+                });
+            services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddControllersWithViews();
         }
 
@@ -62,7 +63,14 @@ namespace TCP
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
+
+            var options = new StaticFileOptions();
+            var contentTypeProvider = (FileExtensionContentTypeProvider)options.ContentTypeProvider ?? new FileExtensionContentTypeProvider();
+            contentTypeProvider.Mappings.Add(".unityweb", "application/octet-stream");
+            options.ContentTypeProvider = contentTypeProvider;
+            app.UseStaticFiles(options);
+
+            app.UseFileServer();
 
             app.UseRouting();
 
@@ -77,6 +85,8 @@ namespace TCP
                     name: "default",
                     pattern: "{controller=Account}/{action=Index}/{id?}");
             });
+            
+
         }
     }
 }
